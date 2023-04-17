@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Two Parallax Sections Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    /* Set the height of the first section */
+    .first-section {
+      height: 500px;
+      background: url('images/1.jpg') center center fixed;
+      background-size: cover;
+    }
+    
+    /* Set the height of the second section */
+    .second-section {
+      height: 500px;
+      background: url('images/2.jpg') center center fixed;
+      background-size: cover;
+    }
+    
+    /* Set the parallax scrolling effect */
+    .parallax {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="first-section parallax">
+    <div class="container">
+      <h1>First Parallax Section</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat velit sit amet suscipit venenatis. Duis in urna ut lorem convallis rhoncus non non nisi. Ut et dolor id ex bibendum ullamcorper ac in justo. Sed nec ipsum velit. Morbi dapibus auctor urna at maximus.</p>
+    </div>
+  </div>
+  
+  <div class="second-section parallax">
+    <div class="container">
+        
+			<h1>Our Services</h1>
+			    <!-- Three columns of text below the carousel -->
+				<div class="row">
+					<div class="col-md-3">
+						<svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+				
+						<h2>Heading</h2>
+						<p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+						<p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+					  </div><!-- /.col-lg-3 -->
+					  <div class="col-md-3">
+						<svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+				
+						<h2>Heading</h2>
+						<p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+						<p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+					  </div><!-- /.col-lg-3 -->
+					<div class="col-md-3">
+					  <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+			  
+					  <h2>Heading</h2>
+					  <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+					  <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+					</div><!-- /.col-lg-3 -->
+					
+					<div class="col-md-3">
+					  <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+			  
+					  <h2>Heading</h2>
+					  <p>And lastly this, the third column of representative placeholder content.</p>
+					  <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+					</div><!-- /.col-lg-3 -->
+				  </div><!-- /.row -->
+			  
+
+			
+    
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="demo" class="carousel slide" data-ride="carousel" data-interval="3" data-animation="fade">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
+  </div>
+  
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner ">
+    <div class="carousel-item active">
+     
+      
+      <div class="container-fluid">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-3 company-color1a shadow p-2 mb-2"> 
+          <h4> OUR VISON </h4> 
+          <p>
+      To become the premier and preferred supplier of construction and maintenance company in Zimbabwe and beyond.
+      </p>
+          </div>
+          <div class="col-md-6 shadow-lg p-2">
+            <h4>
+              OUR VALUES
+            </h4>
+      <p>
+        <ul>
+          <li>To deliver quality service and products.</li>
+          <li>To ensure our clients are happy and exceed their expectations.</li>
+          <li>To be efficient and effective in customer service.</li>
+          <li>Maintain a healthy life and work balance for our employees.</li>
+          <li>Collaborating within and outside the company to give the best possible result.</li>
+          <li>To work with honesty and integrity without compromising the truth.</li>
+
+        </ul>
+      </p>
+          </div>
+          <div class="col-md-3 company-color1a shadow p-2 mt-2">
+      <h4>
+        OUR MISSION
+      </h4>
+      <p>
+        Jabcon's mission statement is to do the best in the eyes of our customers, employees and shareholders through superior service
+        delivery
+      </p>
+
+          </div>
+            </div>
+      </div>
+
+
+    </div>
+
+
+    <div class="carousel-item">
+     
+      
+      <div class="container-fluid">
+        <div class="row justify-content-center align-items-center">
+
+       
+          <div class="col-md-6 shadow-lg p-2">
+            <h4>
+              OUR VALUES
+            </h4>
+      <p>
+        <ul>
+          <li>To deliver quality service and products.</li>
+          <li>To ensure our clients are happy and exceed their expectations.</li>
+          <li>To be efficient and effective in customer service.</li>
+          <li>Maintain a healthy life and work balance for our employees.</li>
+          <li>Collaborating within and outside the company to give the best possible result.</li>
+          <li>To work with honesty and integrity without compromising the truth.</li>
+
+        </ul>
+      </p>
+          </div>
+
+
+          <div class="col-md-3 company-color1a shadow p-2 mt-2">
+      <h4>
+        OUR MISSION
+      </h4>
+      <p>
+        Jabcon's mission statement is to do the best in the eyes of our customers, employees and shareholders through superior service
+        delivery
+      </p>
+
+          </div>
+
+          <div class="col-md-3 company-color1a shadow p-2 mb-2"> 
+            <h4> OUR VISON </h4> 
+            <p>
+        To become the premier and preferred supplier of construction and maintenance company in Zimbabwe and beyond.
+        </p>
+            </div>
+            </div>
+      </div>
+
+
+    </div>
+
+
+    
+    <div class="carousel-item">
+     
+      
+      <div class="container-fluid">
+        <div class="row justify-content-center align-items-center">
+
+      
+
+          <div class="col-md-3 company-color1a shadow p-2 mt-2">
+      <h4>
+        OUR MISSION
+      </h4>
+      <p>
+        Jabcon's mission statement is to do the best in the eyes of our customers, employees and shareholders through superior service
+        delivery
+      </p>
+
+          </div>
+
+          <div class="col-md-3 company-color1a shadow p-2 mb-2"> 
+            <h4> OUR VISON </h4> 
+            <p>
+        To become the premier and preferred supplier of construction and maintenance company in Zimbabwe and beyond.
+        </p>
+            </div>
+
+
+             
+          <div class="col-md-6 shadow-lg p-2">
+            <h4>
+              OUR VALUES
+            </h4>
+      <p>
+        <ul>
+          <li>To deliver quality service and products.</li>
+          <li>To ensure our clients are happy and exceed their expectations.</li>
+          <li>To be efficient and effective in customer service.</li>
+          <li>Maintain a healthy life and work balance for our employees.</li>
+          <li>Collaborating within and outside the company to give the best possible result.</li>
+          <li>To work with honesty and integrity without compromising the truth.</li>
+
+        </ul>
+      </p>
+          </div>
+
+
+            </div>
+      </div>
+
+
+    </div>
+
+ 
+
+    <div class="carousel-item">
+     
+      
+      <div class="container-fluid">
+        <div class="row justify-content-center align-items-center">
+
+      
+
+
+          <div class="col-md-3 company-color1a shadow p-2 mb-2"> 
+            <h4> OUR VISON </h4> 
+            <p>
+        To become the premier and preferred supplier of construction and maintenance company in Zimbabwe and beyond.
+        </p>
+            </div>
+
+
+             
+          <div class="col-md-6 shadow-lg p-2">
+            <h4>
+              OUR VALUES
+            </h4>
+      <p>
+        <ul>
+          <li>To deliver quality service and products.</li>
+          <li>To ensure our clients are happy and exceed their expectations.</li>
+          <li>To be efficient and effective in customer service.</li>
+          <li>Maintain a healthy life and work balance for our employees.</li>
+          <li>Collaborating within and outside the company to give the best possible result.</li>
+          <li>To work with honesty and integrity without compromising the truth.</li>
+
+        </ul>
+      </p>
+          </div>
+
+
+          <div class="col-md-3 company-color1a shadow p-2 mt-2">
+            <h4>
+              OUR MISSION
+            </h4>
+            <p>
+              Jabcon's mission statement is to do the best in the eyes of our customers, employees and shareholders through superior service
+              delivery
+            </p>
+
+                </div>
+
+
+            </div>
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+    
+    <div class="carousel-item">
+     
+      
+      <div class="container-fluid">
+        <div class="row justify-content-center align-items-center">
+
+      
+
+
+       
+
+
+             
+          <div class="col-md-6 shadow-lg p-2">
+            <h4>
+              OUR VALUES
+            </h4>
+      <p>
+        <ul>
+          <li>To deliver quality service and products.</li>
+          <li>To ensure our clients are happy and exceed their expectations.</li>
+          <li>To be efficient and effective in customer service.</li>
+          <li>Maintain a healthy life and work balance for our employees.</li>
+          <li>Collaborating within and outside the company to give the best possible result.</li>
+          <li>To work with honesty and integrity without compromising the truth.</li>
+
+        </ul>
+      </p>
+          </div>
+
+
+          <div class="col-md-3 company-color1a shadow p-2 mt-2">
+            <h4>
+              OUR MISSION
+            </h4>
+            <p>
+              Jabcon's mission statement is to do the best in the eyes of our customers, employees and shareholders through superior service
+              delivery
+            </p>
+
+                </div>
+
+                
+
+                <div class="col-md-3 company-color1a shadow p-2 mb-2"> 
+                  <h4> OUR VISON </h4> 
+                  <p>
+              To become the premier and preferred supplier of construction and maintenance company in Zimbabwe and beyond.
+              </p>
+                  </div>
+
+            </div>
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+    
+
+    
+    <div class="carousel-item">
+     
+      
+      <div class="container-fluid">
+        <div class="row justify-content-center align-items-center">
+
+      
+
+
+       
+
+
+
+          <div class="col-md-3 company-color1a shadow p-2 mt-2">
+            <h4>
+              OUR MISSION
+            </h4>
+            <p>
+              Jabcon's mission statement is to do the best in the eyes of our customers, employees and shareholders through superior service
+              delivery
+            </p>
+
+                </div>
+
+                
+
+                <div class="col-md-3 company-color1a shadow p-2 mb-2"> 
+                  <h4> OUR VISON </h4> 
+                  <p>
+              To become the premier and preferred supplier of construction and maintenance company in Zimbabwe and beyond.
+              </p>
+                  </div>
+
+
+
+                  
+             
+          <div class="col-md-6 shadow-lg p-2">
+            <h4>
+              OUR VALUES
+            </h4>
+      <p>
+        <ul>
+          <li>To deliver quality service and products.</li>
+          <li>To ensure our clients are happy and exceed their expectations.</li>
+          <li>To be efficient and effective in customer service.</li>
+          <li>Maintain a healthy life and work balance for our employees.</li>
+          <li>Collaborating within and outside the company to give the best possible result.</li>
+          <li>To work with honesty and integrity without compromising the truth.</li>
+
+        </ul>
+      </p>
+          </div>
+
+            </div>
+      </div>
+
+
+    </div>
+
+
+
+
+    <div class="carousel-item">
+     
+      
+      <div class="container-fluid">
+        <div class="row justify-content-center align-items-center">
+
+      
+
+
+       
+
+
+
+
+                <div class="col-md-3 company-color1a shadow p-2 mb-2"> 
+                  <h4> OUR VISON </h4> 
+                  <p>
+              To become the premier and preferred supplier of construction and maintenance company in Zimbabwe and beyond.
+              </p>
+                  </div>
+
+
+
+                  
+             
+          <div class="col-md-6 shadow-lg p-2">
+            <h4>
+              OUR VALUES
+            </h4>
+      <p>
+        <ul>
+          <li>To deliver quality service and products.</li>
+          <li>To ensure our clients are happy and exceed their expectations.</li>
+          <li>To be efficient and effective in customer service.</li>
+          <li>Maintain a healthy life and work balance for our employees.</li>
+          <li>Collaborating within and outside the company to give the best possible result.</li>
+          <li>To work with honesty and integrity without compromising the truth.</li>
+
+        </ul>
+      </p>
+          </div>
+
+
+          
+          <div class="col-md-3 company-color1a shadow p-2 mt-2">
+            <h4>
+              OUR MISSION
+            </h4>
+            <p>
+              Jabcon's mission statement is to do the best in the eyes of our customers, employees and shareholders through superior service
+              delivery
+            </p>
+
+                </div>
+
+                
+
+            </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+

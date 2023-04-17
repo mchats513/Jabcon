@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="static/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
+  
+<style>
+
+  .company-color1{
+    background-color: #0000FF;
+  }
+
+  .company-color1a{
+    background-color: rgba(0, 0, 255, 0.3);
+  }
+
+
+  
+  .company-color1b{
+    background-color: rgba(255, 255, 0, 0.8);
+  }
+
+  .company-color2{
+    background-color: yellow;
+  }
+
+  .opman{
+    opacity: 0.5;
+  }
+  .img {
+    aspect-ratio: 9/11;
+    width: 100%;
+  }
+
+  body{
+    background-image: linear-gradient(
+      -45deg,
+      #673ab7 0%,
+      #3f51b5 25%,
+      #2196f3 51%,
+      #87ceeb 100%
+    );
+  }
+h1,p{opacity: unset;}
+
+.rowd{flex-wrap: initial;
+}
+
+.zoom-effect {
+  transition: all 0.5s ease-in-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.zoom-effect:not(:hover) {
+  transform: scale(1);
+  background-color: rgba(0, 0, 255, 0.3);
+  z-index: 0;
+}
+
+.zoom-effect:hover:first-child {
+  transform:matrix(1.2, 0, 0, 1.2, 25, 0);
+
+  
+  z-index: 1;
+}
+
+.zoom-effect:hover:last-child {
+  transform:matrix(1.2, 0, 0, 1.2, -25, 0);
+
+  z-index: 1;
+
+}
+
+
+.zoom-effect1 {
+  transition: all 0.5s ease-in-out;
+}
+
+.zoom-effect1:hover {
+  transform: scale(1);
+  z-index: 1;
+}
+
+.zoom-effect1:not(:hover) {
+  transform: scale(.8);
+  background-color: rgba(0, 0, 255, 0.3);
+  z-index: 0;
+}
+
+@keyframes example {
+  0%   {left:-100%;}
+  100% {left:100%;}
+}
+
+@media screen and (max-width: 786px) {
+  
+
+  
+  .zoom-effect:hover {
+    transform: scale(1);
+    z-index: 1;
+  }
+  
+  .zoom-effect:not(:hover) {
+    transform: scale(.8);
+    background-color: rgba(0, 0, 255, 0.3);
+    z-index: 0;
+  }
+  
+  .zoom-effect:hover:first-child {
+    transform:matrix(1, 0, 0, 1, 0, 0);
+  
+    
+    z-index: 1;
+  }
+  
+  .zoom-effect:hover:last-child {
+    transform:matrix(1, 0, 0, 1, 0, 0);
+  
+    z-index: 1;
+  
+  }
+  
+  
+  .zoom-effect1 {
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .zoom-effect1:hover {
+    transform: scale(1);
+    z-index: 1;
+  }
+  
+  .zoom-effect1:not(:hover) {
+    transform: scale(.8);
+    background-color: rgba(0, 0, 255, 0.3);
+    z-index: 0;
+  }
+  
+}
+</style>
+
+
+</head>
+
+<body>
+  <header>
+  
+		
+      <nav class="navbar navbar-expand-sm company-color1 navbar-dark fixed-top opman">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+      
+          <img src="images/logos.png" alt="Company Logo" width="150" class="img-fluid ">
+      
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+            </li> 
+         
+            <li class="nav-item">
+            <a class="nav-link active" href="gallery.html">Our Work</a>
+            </li>    
+              
+            <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+            </li> 
+          </ul>
+          </div>
+        </div>
+        </nav>
+        
+  </header>
+  <main>
+
+    <div class="container my-5 bg-light">
+      <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+          <h1 class="display-4 fw-bold lh-1">Building a Strong Foundation for Your Future: </h1>
+          <p class="lead">
+            Welcome to <strong class="fw-bold">JABCON TIMBERS & CONSTRUCTION</strong>, your trusted partner for all your construction needs. With our expert team of professionals and commitment to quality craftsmanship, we are dedicated to creating innovative and sustainable solutions for your building projects. From concept to completion, we work tirelessly to ensure that your vision becomes a reality. Let's build something great together.
+          </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">View Services</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Contact Us</button>
+          </div>
+        </div>
+        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+          
+          <div id="headerSlide" class="carousel slide" data-bs-ride="carousel">
+
+ 
+  
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/1.JPG" alt="Los Angeles" class="d-block img" width="720">
+                
+              </div>
+              <div class="carousel-item">
+                <img src="images/4.jpg" alt="Chicago" class="d-block img" width="720">
+                 
+              </div>
+              <div class="carousel-item">
+                <img src="images/6.jpg" alt="New York" class="d-block img" width="720">
+                 
+              </div>
+            </div>
+            
+           
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+<!-- one -->
+
+    <div class="container py-4 mb-5 shadow text-light">
+
+
+
+                
+      <div class="container-fluid"> 
+        <div class="mx-auto" style="width:200px">
+          <h2 class="mx-auto">About Us</h2>
+        </div>
+        
+        <div class="row justify-content-center align-items-center d-flex">
+          
+
+          <div class="col-md-3 shadow p-2 mb-2 zoom-effect"> 
+            <h4> OUR VISON </h4> 
+            <p>
+        To become the premier and preferred supplier of construction and maintenance company in Zimbabwe and beyond. <br><br>
+        </p>
+            </div>
+            <div class="col-md-6 shadow-lg p-2 zoom-effect1">
+              <h4>
+                OUR VALUES
+              </h4>
+        <p>
+          <ul>
+            <li>To deliver quality service and products.</li>
+            <li>To ensure our clients are happy and exceed their expectations.</li>
+            <li>To be efficient and effective in customer service.</li>
+            <li>Maintain a healthy life and work balance for our employees.</li>
+            <li>Collaborating within and outside the company to give the best possible result.</li>
+            <li>To work with honesty and integrity without compromising the truth.</li>
+  
+          </ul>
+        </p>
+            </div>
+            <div class="col-md-3 zoom-effect shadow p-2 mt-2">
+        <h4>
+          OUR MISSION
+        </h4>
+        <p>
+          Jabcon's mission statement is to do the best in the eyes of our customers, employees and shareholders through superior service
+          delivery
+        </p>
+  
+            </div>
+  
+
+
+
+            </div>
+
+
+      </div>
+
+
+
+
+
+
+
+
+      
+
+
+   
+    </div>
+
+
+    
+
+
+    <div class="mb-5 container p-4 border shadow bg-light"> 
+      <h2 class="mx-auto">About Us</h2>
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+       
+        <p class="lead">
+          In today's fast-paced world, finding a peaceful retreat to unwind and recharge is more important than ever. At Jabcon, we understand this need and are committed to helping you create the perfect home or office environment. Our team of experts focuses on meticulous planning and impeccable execution to ensure that your project is completed on time and within budget. With years of experience and a strong commitment to excellence, we take pride in delivering customized, high-quality craftsmanship that goes above and beyond our clients' expectations. Let us help you create the space of your dreams - contact Jabcon today!
+        </p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="images/5.jpg" class="shadow-lg" width="100%" height="400" >
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+    <div class="mb-5 container p-4 shadow text-light">
+			<h1 class = "text-light">Our Services</h1>
+			    <!-- Three columns of text below the carousel -->
+        
+
+          <div id="demo" class="carousel slide" data-ride="carousel" data-interval="3000" data-animation="fade">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+            
+          
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner text-light">
+              <div class="carousel-item active">
+                <div class="container">
+                
+                
+                <div class="row justify-content-center align-items-center g-2">
+                  <div class="col"> 
+                    <div class="">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                
+                    <h2>Heading</h2>
+                    <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+                    <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                    </div><!-- /. -->
+                  </div>
+
+
+                  <div class="col">
+                    <div class="">
+                      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                  
+                      <h2>Heading</h2>
+                      <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+                      <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                      </div><!-- /. -->
+                    
+
+                  </div>
+                  
+                  
+                  <div class="col">
+                    <div class="">
+                      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                  
+                      <h2>Heading</h2>
+                      <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+                      <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                      </div><!-- /. -->
+                    
+
+                  </div>
+                  
+
+                </div>
+                  </div>
+              </div>
+   
+
+              <div class="carousel-item">
+                <div class="container">
+                
+                
+                <div class="row justify-content-center align-items-center g-2">
+
+                  <div class="col">
+                    <div class="">
+                      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                  
+                      <h2>Heading</h2>
+                      <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+                      <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                      </div><!-- /. -->
+                    
+
+                  </div>
+                  
+                  <div class="col"> 
+                    <div class="">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                
+                    <h2>Heading</h2>
+                    <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+                    <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                    </div><!-- /. -->
+                  </div>
+
+
+                  <div class="col">
+                    <div class="">
+                      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                  
+                      <h2>Heading</h2>
+                      <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+                      <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                      </div><!-- /. -->
+                    
+
+                  </div>
+                  
+                  
+                </div>
+                  </div>
+              </div>
+
+
+
+              <div class="carousel-item">
+                <div class="container">
+                
+                
+                <div class="row justify-content-center align-items-center g-2">
+                  <div class="col">
+                    <div class="">
+                      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                  
+                      <h2>Heading</h2>
+                      <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+                      <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                      </div><!-- /. -->
+                    
+
+                  </div>
+                  
+
+                  <div class="col"> 
+                    <div class="">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                
+                    <h2>Heading</h2>
+                    <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+                    <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                    </div><!-- /. -->
+                  </div>
+
+
+                  <div class="col">
+                    <div class="">
+                      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                  
+                      <h2>Heading</h2>
+                      <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+                      <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                      </div><!-- /. -->
+                    
+
+                  </div>
+                  
+                  
+                </div>
+                  </div>
+              </div>
+
+
+            </div>
+            
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+
+
+<!-- Carousel -->
+
+
+
+
+
+
+
+	
+			</div>
+
+
+
+
+      <div class="mb-5 container p-4 border shadow bg-light"> 
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15192.432401565346!2d31.0868948!3d-17.8335667!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931bb0046b10e41%3A0xf6babb480cdd8aaa!2sJabcon%20Timbers%20and%20Construction!5e0!3m2!1sen!2szw!4v1681124391313!5m2!1sen!2szw" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+    </div>
+
+
+
+  </main>
+  <footer class="footer mt-auto py-3 border shadow  bg-light opman">
+    <div class="container">
+      <div class="row justify-content-center align-items-start g-2">
+        <div class="col-md-4">
+
+          <img src="images/logos.png" alt="Company Logo" width="350" class="img-fluid ">
+
+
+
+
+        </div>
+        <div class="col-md-4">
+          <h4>
+            Quick Links
+         
+          </h4>
+
+        
+
+          
+          <a href="index.html">Home</a> <br>
+          <a href="about.html">About Us</a><br>
+          <a href="services.html">Our Services</a><br>
+          <a href="gallery.html">Our Work</a>
+          <a href="contact.html">Contact Us</a>
+          
+          </div>
+        <div class="col-md-4">
+          <h4>
+            Contact Us
+          </h4>
+          <div class="row">Cell : +263 13 456 789</div>
+          <div class="row">Cell : +263 13 456 789</div>
+          <div class="row">Cell : +263 13 456 789</div>
+          <div class="row">Cell : +263 13 456 789</div>
+        </div>
+      </div>
+      
+    </div>
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+
+
+
+
+
+  <script src="static/popper.min.js">
+  </script>
+
+  <script src="static/bootstrap-5.1.3-dist/js/bootstrap.min.js">
+  </script>
+</body>
+
+</html>
